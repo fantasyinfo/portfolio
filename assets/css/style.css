@@ -34,7 +34,9 @@ header nav ul li a:visited {
 }
 
 header nav ul li a:active, 
-header nav ul li a:hover{
+header nav ul li a:hover,
+header nav ul li a.active
+{
     color:rgba(255,255,255,0.7);
     border: 1px solid var(--primary-color);
 }
@@ -55,4 +57,93 @@ header nav ul li a:hover{
     background-color:#fff;
     margin:0.1em 0;
     border-radius:0.1em;
+}
+
+
+/* Main */
+
+main .main-content{
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    margin:4em 0;
+}
+
+
+/* Aside */
+main .main-content aside{
+    grid-column:1/5;
+    background-color:var(--tint-1-color);
+    height: 70vh;
+    border-radius:2em;
+    border:1px solid white;
+    position:fixed;
+}
+
+main .main-content aside .intro{
+    margin:2em auto;
+    padding:0 2em;
+    
+}
+
+main .main-content aside .intro .profile-img{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-color:var(--primary-color);
+    height: 20em;
+    width:20em;
+    border-radius:50%;
+    box-shadow:1px 1px 10px rgba(0,0,0,0.2);
+}
+
+
+main .main-content aside .intro .profile-name {
+    font-size:4rem;
+    font-weight:700;
+    color:var(--primary-color);
+    margin:0.5em 0 0.5em 0;
+    line-height:1;
+    position:relative;
+}
+
+main .main-content aside .intro .profile-name:after {
+    content:"";
+    display:block;
+    position:absolute;
+    bottom:-10px;
+    width:50%;
+    height:0.1em;
+    background-color: var(--primary-color);
+}
+
+
+main .main-content aside .intro .profile-designation{
+    font-size:2rem;
+    font-weight:900;
+    color:var(--secondary-color);
+    line-height:1;
+    text-transform:uppercase;
+}
+main .main-content aside .intro .profile-desc{
+    margin:0.5em 0;
+    font-size:1.8rem;
+    font-weight:300;
+    color:var(--secondary-color);
+    line-height:1.8;
+    word-break: break-word;
+}
+
+
+
+
+
+
+
+
+
+/* Section */
+main .main-content .section{
+    grid-column:6/13;
+    background-color:var(--tint-1-color);
 }
