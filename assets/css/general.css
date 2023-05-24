@@ -1,0 +1,74 @@
+/* Font Face Rubik */
+
+@font-face{
+    font-family:'Rubik Black';
+    src:url('../fonts/Rubik-Black.ttf');
+}
+@font-face{
+    font-family:'Rubik Bold';
+    src:url('../fonts/Rubik-Bold.ttf');
+}
+@font-face{
+    font-family:'Rubik SemiBold';
+    src:url('../fonts/Rubik-SemiBold.ttf');
+}
+@font-face{
+    font-family:'Rubik ExtraBold';
+    src:url('../fonts/Rubik-ExtraBold.ttf');
+}
+@font-face{
+    font-family:'Rubik Italic';
+    src:url('../fonts/Rubik-Italic.ttf');
+}
+@font-face{
+    font-family:'Rubik Light';
+    src:url('../fonts/Rubik-Light.ttf');
+}
+@font-face{
+    font-family:'Rubik Medium';
+    src:url('../fonts/Rubik-Medium.ttf');
+}
+@font-face{
+    font-family:'Rubik Regular';
+    src:url('../fonts/Rubik-Regular.ttf');
+}
+
+:root {
+    --primary-color: #8338ec;
+    --secondary-color:#0d0618;
+}
+/* Reset  */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style-type:none;
+}
+
+
+html {
+    font-size:62.5%;
+    font-family:'Rubik', sans-serif;
+}
+
+body {
+    background-color:var(--secondary-color);
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin:0;
+}
+
+a {
+    text-decoration:none;
+}
+
+img {
+    width:100%;
+}
+
+.container {
+    max-width:114em;
+    padding:0 2em;
+    margin:0 auto;
+}
